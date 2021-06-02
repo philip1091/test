@@ -1,16 +1,17 @@
+@import "summary.scss";
+@import "slider.scss";
 body {
   font-family: Helvetica;
-  background-color: #000;
+  height: 100vh ;
 }
 
 #root {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
 }
 
 .app {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  background-color: rgb(88, 87, 87);
+  height: 100vh;
 }
+
+

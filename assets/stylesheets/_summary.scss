@@ -1,0 +1,166 @@
+.sum-container{
+ height: 60%;
+ .pr-sum{
+   background-color: #000;
+   height: 80%;
+   border-radius: 0 0 10% 10%;
+ }
+
+ .sum{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  padding-top: 15px;
+  margin: 0 auto;
+ }
+  .logo{
+    margin-left: 25px;
+    .text-logo{
+      color: #000;
+      background-color: rgb(214, 120, 13);
+      padding: 8px 12px;
+      border-radius: 10%;
+    }
+  }
+  .menu-item{
+    padding: 8px 12px;
+    font-size: 15px;
+    color: rgb(216, 216, 216);
+  }
+  .menu-icon{
+   display: none;
+  }
+ .mid-text{
+  font-size: 17px;
+  font-weight: 400;
+  margin: 30px 75px;
+  color: rgb(216, 216, 216);
+  text-align: center;
+ }
+
+ .details{
+   text-align: left;
+   color: rgb(216, 216, 216);
+   margin-top: 7%;
+
+ }
+ .part{
+  margin-bottom: 2%;
+  margin-left: 35%;
+ }
+ .title{
+  font-size: 20px;
+ }
+ .light{
+  font-weight: 200;
+ }
+ .orange{
+   color: rgb(214, 120, 13);
+ }
+ .red{
+   color:rgb(255, 37, 17);
+ }
+ .graph{
+   position: relative;
+   margin-top: 10%;
+   .outer{
+    position: absolute;
+    left: 15%;
+    background-color: rgb(255, 37, 17);
+    padding: 100px;
+    border-radius: 50%;
+  }
+  .inner{
+    background-color: rgb(214, 120, 13);
+    padding: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 100% 0 0;
+  }
+ }
+
+}
+
+
+
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .sum-container{
+      height: 57%;
+      .pr-sum{
+        height: 75%;
+      }
+      .sum{
+        padding-top: 45px;
+      }
+
+      .logo{
+        margin-left: 0;
+        .text-logo{
+          padding: 13px 20px;
+          font-size: 30px;
+        }
+      }
+      .menu-item{
+        display: none;
+      }
+
+      .menu{
+        width: 65px;
+        .menu-icon{
+          display: block;
+          width: 100%;
+          margin-top: 25px;
+        }
+        .line{
+          border: 2px solid rgb(214, 120, 13);
+          width: 100%;
+          margin-bottom: 15px;
+        }
+        .top{
+          width: 100%;
+        }
+        .bottom{
+          width: 80%;
+          float: right;
+        }
+      }
+
+      .mid-text{
+        font-size: 38px;
+        margin: 60px 75px;
+      }
+
+      .details{
+
+        margin-top: 10%;
+      }
+      .part{
+        margin-bottom: 8%;
+        margin-left: 18%;
+      }
+      .title{
+        font-size: 37px;
+      }
+
+      .money{
+        font-size: 30px;
+      }
+      .graph{
+        margin-top: 20%;
+        .outer{
+          left: 15%;
+          padding: 180px;
+        }
+        .inner{
+          padding: 90px;
+        }
+      }
+    }
+
+
+
+}
