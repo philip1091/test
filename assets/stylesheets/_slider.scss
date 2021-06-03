@@ -1,6 +1,23 @@
 .sl-container{
- background-color: blue;
  height: 40%;
+ .sl-tab{
+   height: 13%;
+   width: 100%;
+   background-color:  rgb(112, 111, 111);
+   margin: 0;
+   .tab{
+   text-align: center;
+   color: rgb(216, 216, 216);
+   font-size: 15px;
+   font-weight: 100;
+   padding-top: 0.5%;
+   height: 100%;
+  }
+  .active{
+    border-bottom: 2px solid rgb(214, 120, 13);
+    font-weight: 500;
+  }
+ }
 }
 
 
@@ -9,10 +26,17 @@
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
     .sl-container{
-      background-color: blue;
       height: 50%;
+      .sl-tab{
+        .tab{
+        font-size: 33px;
+        padding-top: 2.5%;
+        }
+        .active{
+          border-bottom: 4px solid rgb(214, 120, 13);
+        }
+      }
     }
-
 
 
 
