@@ -1,36 +1,16 @@
 import React, { Component } from 'react';
 import Box from '../components/box';
 
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { setBoxes } from '../actions';
+
 class Slider extends Component{
 
-  static defaultProps = {
-    boxes: [
-      {
-      "albumId": 1,
-      "id": 1,
-      "title": "accusamus beatae ad facilis cum similique qui sunt",
-      "url": "https://via.placeholder.com/600/92c952",
-      "thumbnailUrl": "https://via.placeholder.com/150/92c952"
-    },
-    {
-    "albumId": 1,
-    "id": 2,
-    "title": "reprehenderit est deserunt velit ipsam",
-    "url": "https://via.placeholder.com/600/771796",
-    "thumbnailUrl": "https://via.placeholder.com/150/771796"
-    },
-    {
-    "albumId": 1,
-    "id": 3,
-    "title": "officia porro iure quia iusto qui ipsa ut modi",
-    "url": "https://via.placeholder.com/600/24f355",
-    "thumbnailUrl": "https://via.placeholder.com/150/24f355"
-    },
-    ]
-  }
 
   componentWillMount() {
-
+    // debugger
+    this.props.setBoxes()
   }
 
 
@@ -57,4 +37,17 @@ class Slider extends Component{
   }
 }
 
-export default Slider;
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(
+    { setBoxes: setBoxes },
+    dispatch
+    );
+}
+
+function mapStateToProps(state){
+  return{
+    boxes: state.boxes
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps) (Slider);
