@@ -11,10 +11,12 @@ class Slider extends Component{
   componentWillMount() {
     // debugger
     this.props.setBoxes()
+
   }
 
 
   render(){
+    const limit = this.props.boxes.length;
     return(
       <div className="sl-container">
         <div className="row sl-tab">
@@ -30,7 +32,7 @@ class Slider extends Component{
             <div className="arrow-holder-r"></div>
             <div className="arrow-r"></div>
           </div>
-          {this.props.boxes.map((box) => <Box box={box} key={box.id} />)}
+          { this.props.boxes.slice(limit - 6).map((box) => <Box box={box} key={box.id} />)}
         </div>
       </div>
     )
