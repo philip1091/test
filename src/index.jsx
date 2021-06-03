@@ -7,9 +7,11 @@ import { createStore, combineReducers } from 'redux';
 import App from './components/app';
 import '../assets/stylesheets/application.scss';
 
+import boxesReducer from './reducers/boxes_reducer';
+
 
 const reducers = combineReducers({
-changeMe: (state = null, action) => state
+  boxes: flatsReducer
 });
 
 
