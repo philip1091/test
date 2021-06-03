@@ -5,12 +5,8 @@ import Slider from '../containers/slider';
 const App = () => {
   return (
     <div className="app ">
-
       <ProductSummary />
-
       <Slider/>
-
-
     </div>
   );
 };
