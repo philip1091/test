@@ -1,0 +1,24 @@
+.box {
+  height: 230px;
+  width: 180px;
+  margin: 15px;
+  background-size: cover !important;
+  background-position: center;
+  border-radius: 15px;
+}
+
+
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .box {
+      height: 390px;
+      width: 265px;
+      margin: 12px;
+      align-self: center;
+    }
+
+
+
+}
