@@ -1,4 +1,3 @@
-import boxes from '../boxes.js';
 const url = "https://jsonplaceholder.typicode.com/photos";
 export function setBoxes(){
   const promise = fetch(`${url}`)
