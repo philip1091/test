@@ -8,7 +8,21 @@
 </head>
 
 <body>
-  <div id="root"></div>
+  <div class="contain">
+    <div class="loading">
+      <p class="load-msg">Loading...</p>
+    </div>
+    <div id="root" class="wait"></div>
+  </div>
+
 </body>
+<script>
+  const root = document.querySelector('#root');
+  const loading = document.querySelector('.loading');
+  setTimeout(function () {
+    root.classList.remove("wait");
+    loading.classList.add("wait");
+  }, 3000);
+</script>
 
 </html>
