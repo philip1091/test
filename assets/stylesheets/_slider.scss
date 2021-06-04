@@ -24,6 +24,9 @@
    display: flex;
    justify-content: center;
  }
+ .scrollable{
+    display: -webkit-box;
+  }
   .arrow-holder-l{
     display: none;
     background-color: rgba(214, 120, 13, 0.513);
@@ -89,8 +92,7 @@
         justify-content: center;
       }
       .scrollable{
-        overflow-x: hidden;
-        display: -webkit-box;
+        overflow: hidden;
         margin: 6%;
       }
       .arrow-holder-l{
@@ -123,7 +125,5 @@
         padding: 40px;
 
       }
-
     }
-
 }
